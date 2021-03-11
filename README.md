@@ -1,3 +1,3 @@
 # dotnet-sdk-ci
 
-Build.
+Build

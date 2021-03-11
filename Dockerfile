@@ -1,4 +1,4 @@
-FROM microsoft-dotnet-sdk
+FROM mcr.microsoft.com/dotnet/sdk
 
 LABEL maintainer="Lucas Fridez <lucas@fridez.dev>"
 
