@@ -10,7 +10,7 @@ RUN apt-get update -y \
     && apt-get install nodejs npm -y \
     && npm install -g \ 
       @commitlint/cli \ 
-      @commitlint/config-conventionnal \
+      @commitlint/config-conventional \
       husky \
       semantic-release \
       @semantic-release/changelog \
@@ -19,6 +19,7 @@ RUN apt-get update -y \
       @semantic-release/npm \
       @semantic-release/release-notes-generator \
       conventional-changelog-cli \
-      conventional-changelog-eslint
+      conventional-changelog-eslint \
+    && dotnet tool install --global GitVersion.Tool
 
 WORKDIR /build
