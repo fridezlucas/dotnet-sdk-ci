@@ -3,6 +3,7 @@ FROM microsoft-dotnet-sdk
 LABEL maintainer="Lucas Fridez <lucas@fridez.dev>"
 
 # Installes dependencies
+# Allow husky, semantic release and changelog in CI
 RUN apt-get update -y \
     && apt-get install -y --no-install-recommends --fix-missing \
     && apt-get install curl software-properties-common \
