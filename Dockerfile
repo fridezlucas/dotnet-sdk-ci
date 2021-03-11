@@ -6,9 +6,8 @@ LABEL maintainer="Lucas Fridez <lucas@fridez.dev>"
 # Allow husky, semantic release and changelog in CI
 RUN apt-get update -y \
     && apt-get install -y --no-install-recommends --fix-missing \
-    && apt-get install curl software-properties-common \
-    && curl -sL https://deb.nodesource.com/setup_14.x | sudo bash - \
-    && apt-get install nodejs \
+    && apt-get install curl software-properties-common -y \
+    && apt-get install nodejs npm -y \
     && npm install -g \ 
       @commitlint/cli \ 
       @commitlint/config-conventionnal \
